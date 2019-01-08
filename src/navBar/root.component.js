@@ -18,6 +18,11 @@ const NavBar = () => (
             Clojure Script
           </a>
         </li>
+        <li>
+          <a href="/angularJS" onClick={navigateToUrl}>
+            AngularjS
+          </a>
+        </li>
       </ul>
     </div>
   </nav>

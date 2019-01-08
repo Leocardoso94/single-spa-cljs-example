@@ -24,11 +24,11 @@ registerApplication(
   () => true
 );
 
-// registerApplication(
-//   "angularJS",
-//   () => import("./src/angularJS/angularJS.app.js"),
-//   pathPrefix("/angularJS")
-// );
+registerApplication(
+  "angularJS",
+  () => import("./src/angularJS/angularJS.app.js"),
+  pathPrefix("/angularJS")
+);
 
 registerApplication(
   "cljs",
