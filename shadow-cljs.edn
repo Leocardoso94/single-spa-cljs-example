@@ -1,0 +1,18 @@
+{:source-paths ["src"]
+
+ :dependencies [[binaryage/devtools "0.9.10"]
+                [proto-repl "0.3.1"]
+                [reagent "0.8.1"]]
+
+ :nrepl        {:port 3333}
+
+ :builds
+ {:app {:target :npm-module
+        :output-dir "cljs"
+        :modules
+        {:main
+         {:entries [app.shadow]}}
+
+        :devtools
+        {:http-root   "public"
+         :http-port   3000}}}}

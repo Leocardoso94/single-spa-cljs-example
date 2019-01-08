@@ -1,0 +1,40 @@
+{
+  "name": "single-spa-simple-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "create-react-class": "^15.6.3",
+    "angular-ui-router": "^1.0.20",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "react-transition-group": "^2.5.2",
+    "single-spa": "^4.0.1",
+    "single-spa-angularjs": "^3.0.1",
+    "single-spa-react": "^2.9.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^2.1.0",
+    "html-loader": "^0.5.5",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "shadow-cljs": "^2.6.10"
+  },
+  "scripts": {
+    "release-shadow": "npx shadow-cljs release app",
+    "start": "npm run release-shadow && webpack-dev-server --open",
+    "build": "npm run release-shadow && webpack --config webpack.config.js -p"
+  }
+}
